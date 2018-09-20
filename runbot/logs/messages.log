@@ -1,0 +1,10 @@
+ERROR 2018-09-20T13:05:49 supybot Invalid user dictionary file, resetting to empty.
+ERROR 2018-09-20T13:05:49 supybot Exact error: FileNotFoundError: [Errno 2] No such file or directory: '/usr/local/runbot/conf/users.conf'
+ERROR 2018-09-20T13:05:49 supybot Invalid channel database, resetting to empty.
+ERROR 2018-09-20T13:05:49 supybot Exact error: FileNotFoundError: [Errno 2] No such file or directory: '/usr/local/runbot/conf/channels.conf'
+WARNING 2018-09-20T13:05:49 supybot Couldn't open ignore database: [Errno 2] No such file or directory: '/usr/local/runbot/conf/ignores.conf'
+ERROR 2018-09-20T13:06:18 supybot Cannot use GPG. python-gnupg is installed but cannot find the gnupg executable.
+INFO 2018-09-20T13:06:51 supybot Shutdown initiated.
+INFO 2018-09-20T13:06:51 supybot Killing Driver objects.
+INFO 2018-09-20T13:06:51 supybot Killing Irc objects.
+INFO 2018-09-20T13:06:51 supybot Shutdown complete.
