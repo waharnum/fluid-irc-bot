@@ -1,0 +1,18 @@
+version: '3'
+services:
+  fluid-logger-bot:
+    env_file: .env
+    build: .
+    restart: always
+    volumes:
+      - irclogs:/usr/local/runbot/logs/ChannelLogger/freenode
+  web:
+    image: nginx:alpine
+    volumes:
+      - irclogs:/usr/share/nginx/html
+      - ./nginx-conf/nginx.vh.default.conf:/etc/nginx/conf.d/default.conf
+    restart: always
+    ports:
+      - 8080:80
+volumes:
+  irclogs:
