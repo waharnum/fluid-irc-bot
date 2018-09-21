@@ -1,7 +1,7 @@
 version: '3'
 services:
   fluid-logger-bot:
-    env_file: .env
+    env_file: ${ENV_FILE_DIRECTORY}/.env
     build: .
     restart: always
     volumes:
