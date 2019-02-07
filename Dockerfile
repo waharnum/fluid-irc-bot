@@ -4,4 +4,4 @@ RUN python3 -m pip install limnoria --upgrade
 RUN mkdir /usr/local/runbot
 COPY runbot/ /usr/local/runbot/
 WORKDIR /usr/local/runbot
-ENTRYPOINT supybot-adduser ./conf/users.conf -u ${BOT_OWNER} -p ${BOT_OWNER_PASS} -c OWNER && supybot --allow-root fluid-bot.conf
+ENTRYPOINT supybot-adduser ./conf/users.conf -u ${BOT_OWNER} -p ${BOT_OWNER_PASS} -c OWNER && supybot --allow-root fluid-bot.conf || supybot --allow-root fluid-bot.conf
